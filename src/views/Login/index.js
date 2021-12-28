@@ -7,12 +7,7 @@ import Button from '../../components/Button';
 function Login() {
   return (
       <S.Container >
-        <body >
-            {/* <h1><span className="span1">BEE</span><span className="span2">BLIOTECA</span></h1>
-            <span className="span-logo1">Biblioteca</span>
-            <br/>
-            <span className="span-logo2">Cadmus</span> */}
-        </body>
+        <body></body>
         <S.ContainerRight>
 
         <div className="area-login">
