@@ -6,42 +6,12 @@ export const Container = styled.body`
 
     body {
         background: url(${imagemFundo});
-        background-size: 90em 47.3em;
+        background-size: 100vw 100vh;
         position: fixed;
         width: 100%;
         height: 100%;
-    }
-    
-    h1 {
-        font-size: 5em;
-        font-weight: bold;
-        text-align: start;
-        margin-top: 15%;
-        margin-left: 10%;
-         
-    }
-    
-    .span1 {
-        color: #4A0000;
-    }
-
-    .span2 {
-        color: #8C52FF;
-    }
-
-    .span-logo1{
-        text-align: start;
-        font-size: 3em;
-        margin-bottom: -10%;
-        margin-left: 34%;
-    }
-    
-    .span-logo2{
-        text-align: start;
-        font-size: 3em;
-        margin-top: 10%;
-        margin-left: 38%;
-    }
+    }    
+   
 `
 
 export const ContainerRight = styled.div`
