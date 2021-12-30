@@ -3,7 +3,8 @@ import Header from '../../components/Header';
 
 function Perfil(){
     return(
-<Header/>
+        <Header/>
+        
     )
 }
 

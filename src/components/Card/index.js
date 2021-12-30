@@ -2,11 +2,11 @@ import React from 'react';
 import * as S from './styles';
 import imgLivro from '../../assets/img-livro.jpeg';
 
-function Card() {
+function Card(props) {
   return (
     <S.Container>
-      <S.ContainerImg><img src={imgLivro}/></S.ContainerImg>
-      <S.ContainerLabel>asasasa</S.ContainerLabel>
+      <S.ContainerImg><img src={props.imagem}/></S.ContainerImg>
+      <S.ContainerLabel>{props.name}</S.ContainerLabel>
     </S.Container>
   )
 }

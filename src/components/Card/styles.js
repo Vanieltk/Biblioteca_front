@@ -12,18 +12,19 @@ export const Container = styled.div`
     
     margin-top: 6%;
     margin-bottom: 6%;
-    cursor: pointer;
-    transition: all 0.5s ease;
-
-    &:hover{
-        opacity: 0.5;
-    }
+    
 `
 export const ContainerImg = styled.div`
     
     img {
         max-height: 185px;
         max-width: 145px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover{
+            opacity: 0.5;
+        }
     }
     
 `
@@ -33,6 +34,18 @@ export const ContainerLabel = styled.div`
     position: absolute;
     margin-top: 16%;
     font-weight: bold;
+    width: 190px;
+    height: 20px;
+    text-align: center;
     color: black;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
+    &:hover {
+        height: 90px;
+        position: absolute;
+        margin-top: 20%;
+        
+    }
+    
 `

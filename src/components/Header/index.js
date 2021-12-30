@@ -1,21 +1,22 @@
 import React from "react";
 import * as S from './styles';
 import logo from '../../assets/header-logo.png';
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
         <S.Container>
             <S.Left>
-                <a href="#"><img src={logo} alt="logo header"/></a>
+                <Link to="/home"><img src={logo} alt="logo header"/></Link>
             </S.Left>
             <S.Right>
-                <a href="#">HOME</a>
+                <Link to="/home" >HOME</Link>
                 <span className="pipe">|</span>
-                <a href="#">ACERVO</a>
+                <Link to="/acervo">ACERVO</Link>
                 <span className="pipe">|</span>
-                <a href="#">MEUS LIVROS</a>
+                <Link href="#">MEUS LIVROS</Link>
                 <span className="pipe">|</span>
-                <a href="#">PERFIL</a>
+                <Link to="/perfil">PERFIL</Link>
             </S.Right>
         </S.Container>
     )
