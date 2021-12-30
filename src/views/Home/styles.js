@@ -8,7 +8,7 @@ export const Conteiner = styled.div`
     width: 100%;
     height: 100%;
     
-    .teste {
+    .div-retangulo-superior {
         background-color: #F5D58A;
         width: 90%;
         height: 70px;
@@ -43,9 +43,6 @@ export const ConteinerContent = styled.div`
     padding-top: 30px;
 
     section {
-        /* display: flex;
-        flex-wrap: wrap;
-        flex: 1 0 21%; */
         display: grid;
         grid-template-columns: repeat(4, 25%);
         justify-content: space-evenly;

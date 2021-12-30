@@ -3,6 +3,7 @@ import * as S from './styles';
 import abelha from '../../assets/abelha-livro.png';
 //componentes
 import Button from '../../components/Button';
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -19,7 +20,7 @@ function Login() {
             <label>Senha:</label>
             <input type="password"/>
             <br/>
-            <button onClick={() => {alert('clicado')}}>Entrar</button>
+            <Link to="/home"><button>Entrar</button></Link>
             <span className="span-cadastro">Não tem cadastro? <a href="#">Cadastre-se</a></span>
           </form>
         </div>

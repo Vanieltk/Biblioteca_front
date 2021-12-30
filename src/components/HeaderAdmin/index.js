@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from './styles';
 import logo from '../../assets/header-logo.png';
+import { Link } from "react-router-dom";
 
 function HeaderAdmin() {
     return (
@@ -9,13 +10,13 @@ function HeaderAdmin() {
                 <a href="#"><img src={logo} alt="logo HeaderAdmin"/></a>
             </S.Left>
             <S.Right>
-                <a href="#">HOME</a>
+                <Link to="/home">HOME</Link>
                 <span className="pipe">|</span>
-                <a href="#">FUNCIONARIOS</a>
+                <Link to="funcionarios">FUNCIONARIOS</Link>
                 <span className="pipe">|</span>
-                <a href="#">ACERVO</a>
+                <Link to="/acervo">ACERVO</Link>
                 <span className="pipe">|</span>
-                <a href="#">SAIR</a>
+                <Link to="#">SAIR</Link>
             </S.Right>
         </S.Container>
     )
