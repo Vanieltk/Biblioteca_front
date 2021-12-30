@@ -15,6 +15,7 @@ export const Conteiner = styled.div`
         margin-left: 5%;
         margin-right: 5%;
     }
+ 
 `
 
 export const ConteinerLogo = styled.div`
@@ -42,16 +43,24 @@ export const ConteinerContent = styled.div`
     padding-top: 30px;
 
     section {
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
+        flex: 1 0 21%; */
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
         justify-content: space-evenly;
-        padding: 0 200px 0 200px;
-        
-        
-
-
-
+        padding: 10px 100px 10px 220px;
     }
 
+    .div-traco h3 {
+        padding-left: 18%;
+        color: #4A0000;
+    }
+
+    .div-traco .linha {
+        
+        border: 1px solid #C1C1C1;
+        margin: 1.5% 15% 0.5% 16.8%;
+    }
     
 `

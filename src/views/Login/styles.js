@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {} from '../../utils/index.js';
 import imagemFundo from '../../assets/background.png';
 
-export const Container = styled.body`
+export const Container = styled.div`
 
     body {
         background: url(${imagemFundo});
@@ -54,6 +54,18 @@ export const ContainerRight = styled.div`
             position: relative;
             margin-left: 35%;
             bottom: 0;
+            background-color: #F68220;
+            border: 0;
+            border-radius: 5em;
+            width: 35%;
+            height: 130%;
+            font-size: 1.3em;
+            color: white;
+            cursor: pointer;
+            
+            &:active {
+                background-color: brown;
+            }
         }
 
         .span-cadastro {

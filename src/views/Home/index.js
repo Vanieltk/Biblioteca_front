@@ -13,7 +13,27 @@ function Home(){
         <S.ConteinerLogo><img src={homeLogo}/></S.ConteinerLogo>
         <S.ConteinerContent>
             <div className="div-traco">
-                <h3>Livro</h3>
+                <h3>Livro ➤</h3>
+                <div className="linha"></div>
+            </div>
+            <section>
+                <Card/><Card/>
+                <Card/><Card/>
+                <Card/><Card/>
+                <Card/><Card/>
+                <Card/><Card/>
+                <Card/><Card/>
+                <Card/><Card/>
+                <Card/><Card/>
+                <Card/><Card/><Card/><Card/>
+                <Card/><Card/>
+                <Card/><Card/><Card/><Card/>
+                <Card/><Card/>
+                <Card/><Card/>
+            </section>
+            <div className="div-traco">
+                <h3>Livro ➤</h3>
+                <div className="linha"></div>
             </div>
             <section>
                 <Card/>
@@ -22,16 +42,8 @@ function Home(){
                 <Card/>
             </section>
             <div className="div-traco">
-            <h3>Livro</h3>
-            </div>
-            <section>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-            </section>
-            <div className="div-traco">
-            <h3>Livro</h3>
+                <h3>Livro ➤</h3>
+                <div className="linha"></div>
             </div>
             <section>
                 <Card/>
