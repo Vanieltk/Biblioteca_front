@@ -5,6 +5,7 @@ import Card from '../../components/Card';
 import homeLogo from '../../assets/home-logo.png';
 
 
+
 function Home(){
   return(
     <S.Conteiner>
