@@ -19,7 +19,7 @@ function Login() {
             <label>Senha:</label>
             <input type="password"/>
             <br/>
-            <Button/>
+            <button onClick={() => {alert('clicado')}}>Entrar</button>
             <span className="span-cadastro">Não tem cadastro? <a href="#">Cadastre-se</a></span>
           </form>
         </div>
