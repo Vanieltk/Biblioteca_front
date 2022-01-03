@@ -14,6 +14,5 @@ export const Button = styled.button`
     &:active {
         background-color: brown;
     }
-
-    
+  
 `
