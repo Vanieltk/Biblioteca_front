@@ -10,7 +10,7 @@ function HeaderAdmin() {
                 <a href="#"><img src={logo} alt="logo HeaderAdmin"/></a>
             </S.Left>
             <S.Right>
-                <Link to="/home">HOME</Link>
+                <Link to="/homeadmin">HOME</Link>
                 <span className="pipe">|</span>
                 <Link to="funcionarios">FUNCIONARIOS</Link>
                 <span className="pipe">|</span>

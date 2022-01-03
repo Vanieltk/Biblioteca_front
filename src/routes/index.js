@@ -8,6 +8,10 @@ import Acervo from "../views/Acervo";
 import HomeAdmin from '../views/HomeAdmin';
 import Perfil from '../views/Perfil';
 import CadastroUsuario from "../views/CadastroUsuario";
+import Funcionarios from "../views/Funcionarios";
+import ListarEmprestimos from "../views/ListarEmprestimos";
+import ListarReservas from "../views/ListarReservas";
+import Usuarios from "../views/Usuarios";
 
 export default function(){
     return(
@@ -18,7 +22,11 @@ export default function(){
                 <Route path="/homeadmin" exact component={HomeAdmin}/>  
                 <Route path="/acervo" exact component={Acervo}/>
                 <Route path="/perfil" exact component={Perfil}/>
-                <Route path="/cadastrousuario" exact component={CadastroUsuario}/>  
+                <Route path="/cadastrousuario" exact component={CadastroUsuario}/> 
+                <Route path="/funcionarios" exact compononent={Funcionarios}/> 
+                <Route path="/listaremprestimos" exact compononent={ListarEmprestimos}/> 
+                <Route path="/listarreservas" exact compononent={ListarReservas}/> 
+                <Route path="/usuarios" exact compononent={Usuarios}/> 
             </Switch>
         </BrowserRouter>
     )
