@@ -11,7 +11,8 @@ export const Button = styled.button`
     color: white;
     cursor: pointer;
 
- 
-
-    
+    &:active {
+        background-color: brown;
+    }
+  
 `
