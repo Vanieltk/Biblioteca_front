@@ -22,20 +22,20 @@ export const CenterContainer = styled.div`
 
     .cadastro-esquerda {
         padding-left: 100px;       
-        padding: 10px 100px 10px 160px;
+        padding: 10px 100px 10px 300px;
         margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .cadastro-direita {
         padding-left: 100px;
-        padding: 10px 100px 10px 120px;
+        padding: 10px 100px 10px 100px;
         margin-bottom: 20px;
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .p-float-label {
-        width: 300px;
+        width: 400px;
         height: 50px;
         margin-bottom: 20px;
         margin-top: 5px;
@@ -47,18 +47,34 @@ export const CenterContainer = styled.div`
         height: 45px;
     }
 
+    .buttonCadastrarContainer{
+        margin-left: 96%;
+        height: 50px;
+        width: 100%;
+        border-radius: 10;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .buttonVoltarContainer{
+        height: 50px;
+        margin-left: -45%;
+
+        width: 300px;
+        width: 100%;
+        border-radius: 10;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
 
     Button {
-        margin-left: 120.5%;
-        margin-top: -1%;
-        height: 50px;
-        width: 300px;
-        border-radius: 0;
+        
     }
 
     h1 {
         position: absolute;
-        top: 10px;
+        font-size: 60px;
+        top: 0px;
         left: 160px;
         color: #4A0000;
     }
