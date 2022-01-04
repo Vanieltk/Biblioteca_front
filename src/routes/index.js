@@ -8,6 +8,8 @@ import Acervo from "../views/Acervo";
 import HomeAdmin from '../views/HomeAdmin';
 import Perfil from '../views/Perfil';
 import CadastroUsuario from "../views/CadastroUsuario";
+import CadastroObra from "../views/CadastroObra";
+
 
 export default function(){
     return(
@@ -19,6 +21,7 @@ export default function(){
                 <Route path="/acervo" exact component={Acervo}/>
                 <Route path="/perfil" exact component={Perfil}/>
                 <Route path="/cadastrousuario" exact component={CadastroUsuario}/>  
+                <Route path="/cadastroobra" exact component={CadastroObra}/>  
             </Switch>
         </BrowserRouter>
     )
