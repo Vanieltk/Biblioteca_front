@@ -1,12 +1,13 @@
+import * as S from './styles';
+import HeaderAdmin from '../../components/HeaderAdmin';
 
-
-
-
-function ListarReserva() {
+function ListarReservas() {
     return(
-    <div></div>
+        <S.Container>
+            <HeaderAdmin/>
+        </S.Container>
         )
     
 }
 
-export default ListarReserva;
+export default ListarReservas;

@@ -1,9 +1,12 @@
-
+import * as S from './styles';
+import HeaderAdmin from '../../components/HeaderAdmin';
 
 function Funcionarios() {
     return(
-        <div></div>
-    )
+        <S.Container>
+            <HeaderAdmin/>
+        </S.Container>
+        )
     
 }
 

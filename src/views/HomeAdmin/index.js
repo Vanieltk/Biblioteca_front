@@ -21,7 +21,7 @@ function HomeAdmin() {
               style={{ fill: '#ecb248', stroke: '#4a0000' }}
               href="/listaremprestimos"
             >
-              <text fontSize={50} x="28%" y="50%">LISTAR</text>
+              <text fontSize={50} x="28%" y="50%">FAZER</text>
               <text fontSize={50} x="7%" y="60%">EMPRÉSTIMO </text>
             </Hexagon>
           </div>
@@ -31,7 +31,7 @@ function HomeAdmin() {
               style={{ flex: 1, fill: '#ecb248', stroke: '#4a0000' }}
               href="/listarreservas"
             >
-              <text fontSize={50} x="28%" y="50%">LISTAR</text>
+              <text fontSize={50} x="28%" y="50%">FAZER</text>
               <text fontSize={50} x="15%" y="60%">RESERVAS </text>
             </Hexagon>
           </div>
@@ -41,8 +41,8 @@ function HomeAdmin() {
               style={{ flex: 1, fill: '#ecb248', stroke: '#4a0000' }}
               href="/funcionarios"
             >
-              <text fontSize={50} x="28%" y="50%">LISTAR</text>
-              <text fontSize={45} x="5%" y="60%">FUNCIONÁRIOS </text>
+              <text fontSize={50} x="10%" y="50%">CADASTRAR</text>
+              <text fontSize={45} x="23%" y="60%">USUÁRIO</text>
             </Hexagon>
           </div>
 
@@ -76,9 +76,10 @@ function HomeAdmin() {
           <div style={{ width: '80%' }}>
             <Hexagon
               style={{ flex: 1, fill: '#ecb248', stroke: '#4a0000' }}
-              href="/usuario"
+              href="/usuarios"
             >
-              <text fontSize={50} x="19%" y="55%">USUÁRIOS</text>
+              <text fontSize={50} x="30%" y="50%">LISTAR</text>
+              <text fontSize={50} x="19%" y="60%">USUÁRIOS</text>
             </Hexagon>
           </div>
           <div style={{ width: '80%' }}>
