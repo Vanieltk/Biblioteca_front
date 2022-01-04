@@ -22,9 +22,9 @@ export const ConteinerLogo = styled.div`
   
     display: flex;
     height: 15vh;
-    font-size: 100px;
+    font-size: 70px;
     margin-bottom: -45px;
-    
+    color: #4a0000;
 
     
     text-align: center;
@@ -48,13 +48,15 @@ export const ConteinerContent = styled.div`
     margin-right: 5%;
     padding-top: 30px;
     
+    
+
     #section1 {
         
         display: grid;
         grid-template-columns: repeat(3, 33.3%);
         justify-content: space-evenly;
-        padding-top: 90px;
-        padding-bottom: 90px;     
+        // padding-top: 90px;
+        // padding-bottom: 90px;     
         margin-left: 12.5%;
         margin-bottom: 0%;
 
@@ -77,9 +79,10 @@ export const ConteinerContent = styled.div`
     #section2 {
         
         display: grid;
+        justify-items: center;
         grid-template-columns: repeat(4, 25%);
         justify-content: space-evenly;
-        padding-top: 90px;
+        // padding-top: 90px;
         margin-left: 5%;
          
        
