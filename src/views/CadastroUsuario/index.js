@@ -100,6 +100,16 @@ function CadastroUsuario() {
 
                 </div>
                 <div className='cadastro-direita'>
+                    
+                    <span className="p-float-label">
+                        <InputText onChange={(e) => {
+                            setFormData({
+                                ...formData,
+                                estado: e.target.value
+                            })
+                        }} className="in" />
+                        <label htmlFor="in">Estado:</label>
+                    </span>
 
                     <span className="p-float-label">
                         <InputText onChange={(e) => {
@@ -159,13 +169,12 @@ function CadastroUsuario() {
                     <Dropdown id="drop" value={Categoria} options={Categorias}
                         placeholder="Categoria de Leitor" />
 
+                <div className='div-buttons'>
+                    <Button  className="button-esquerda" name="CADASTRAR"></Button>
+                    <Button className="button-direita" name="VOLTAR"></Button>
+                </div>                
                 </div>
-                <div className='buttonCadastrarContainer'>
-                    <Button name="CADASTRAR"></Button>
-                </div>
-                <div className='buttonVoltarContainer'>
-                    <Button name="VOLTAR"></Button>
-                </div>
+                
             </S.CenterContainer>
 
         </S.Container>

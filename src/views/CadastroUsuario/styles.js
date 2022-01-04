@@ -1,13 +1,14 @@
 import styled from 'styled-components';
+import imagemFundo from '../../assets/background-2.png';
+
 
 export const Container = styled.div`
 
-    background-color: white;
     width: 100%;
-    height: 100%;
-    
-    
-   
+    height: 100%;    
+    background: url(${imagemFundo});
+    background-size: 100vw 100vh;
+    position: fixed;
 `
 
 export const CenterContainer = styled.div`
@@ -20,25 +21,24 @@ export const CenterContainer = styled.div`
     margin: 50px auto;
     padding-top: 5%;
 
-    .cadastro-esquerda {
-        padding-left: 100px;       
-        padding: 10px 100px 10px 300px;
+    .cadastro-esquerda {      
+        padding: 10px 100px 10px 200px;
         margin-bottom: 20px;
         margin-top: 50px;
     }
 
     .cadastro-direita {
-        padding-left: 100px;
-        padding: 10px 100px 10px 100px;
-        margin-bottom: 20px;
-        margin-top: 50px;
+       
+        padding: 10px 100px 1px 30px;
+        
+        margin-top: 0;
     }
 
     .p-float-label {
         width: 400px;
         height: 50px;
         margin-bottom: 20px;
-        margin-top: 5px;
+        margin-top: -5px;
         font-size: large;
     }
 
@@ -47,35 +47,28 @@ export const CenterContainer = styled.div`
         height: 45px;
     }
 
-    .buttonCadastrarContainer{
-        margin-left: 96%;
-        height: 50px;
-        width: 100%;
-        border-radius: 10;
-        margin-top: 50px;
-        margin-bottom: 100px;
+    .div-buttons {
+        display: flex;
+        margin-top: 40px;
+        margin-left: -250px;
     }
 
-    .buttonVoltarContainer{
-        height: 50px;
-        margin-left: -45%;
-
-        width: 300px;
-        width: 100%;
-        border-radius: 10;
-        margin-top: 50px;
-        margin-bottom: 100px;
+    .button-direita {
+        display: flex;
+        justify-content: center;
     }
 
     Button {
-        
+        height: 50px;
+        width: 200px;
     }
+    
 
     h1 {
         position: absolute;
-        font-size: 60px;
-        top: 0px;
-        left: 160px;
+        font-size: 50px;
+        top: -10px;
+        left: 80px;
         color: #4A0000;
     }
 

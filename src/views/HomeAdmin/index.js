@@ -19,7 +19,7 @@ function HomeAdmin() {
           <div style={{ width: '65%', marginLeft: '23%' }}>
             <Hexagon
               style={{ fill: '#ecb248', stroke: '#4a0000' }}
-              href="/listaremprestimos"
+              href="/fazeremprestimos"
             >
               <text fontSize={50} x="28%" y="50%">FAZER</text>
               <text fontSize={50} x="7%" y="60%">EMPRÉSTIMO </text>
