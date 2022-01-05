@@ -1,0 +1,75 @@
+import styled from 'styled-components';
+import imagemFundo from '../../assets/background-2.png';
+
+export const Container = styled.div` 
+   display: grid;
+   width: 100%;
+   height: 100%;
+   background: url(${imagemFundo});
+   background-size: 100vw 100vh;
+   position: fixed;
+`
+export const CenterContainer = styled.div`
+   display: grid;
+   background-color: #F5D58A;
+   width: 80vw;
+   height: 81vh;
+   position: relative;
+   margin: 40px auto;
+   margin-bottom: 0;
+   padding-top: 5%;
+
+   .cadastro {
+         padding-left: 100px;       
+         padding: 0 100px 10px 400px;
+         margin-bottom: 10px;
+   }
+
+   .p-float-label {
+         width: 400px;
+         height: 50px;
+         margin-bottom: 15px;
+         margin-top: 5px;
+         font-size: large;
+   }
+
+   .in {
+         width: 350px;
+         height: 45px;
+   }
+
+   .div-buttons {
+      display: flex;
+      justify-content: center;
+      margin-right: 50px; 
+      margin-bottom: 20px;
+   }
+
+   .p-dropdown {
+      margin-bottom: -20px;
+      padding-bottom: -10px;
+      width: 200px;
+   }
+
+   #drop {
+      margin-top: 0;
+      margin-left: 500px;
+   }
+
+   Button {
+      height: 50px;
+      width: 200px;
+   }
+
+   h1 {
+         position: absolute;
+         font-size: 50px;
+         top: -10px;
+         left: 80px;
+         color: #4A0000;
+   }
+
+   label {
+         font-weight: bold;
+   }
+`

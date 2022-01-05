@@ -2,8 +2,6 @@ import React from "react";
 import HeaderAdmin from "../../components/HeaderAdmin";
 import colmeia from '../../assets/colmeia-adm.png';
 import * as S from './styles';
-import { Button } from "../../components/Button/styles";
-import { Link } from "react-router-dom";
 import Hexagon from 'react-hexagon';
 
 function HomeAdmin() {
@@ -29,7 +27,7 @@ function HomeAdmin() {
           <div style={{ width: '65%', marginLeft: '5%' }}>
             <Hexagon
               style={{ flex: 1, fill: '#ecb248', stroke: '#4a0000' }}
-              href="/listarreservas"
+              href="/fazerreserva"
             >
               <text fontSize={50} x="28%" y="50%">FAZER</text>
               <text fontSize={50} x="15%" y="60%">RESERVAS </text>
@@ -39,16 +37,13 @@ function HomeAdmin() {
           <div style={{ width: '65%', marginLeft: '-13%' }}>
             <Hexagon
               style={{ flex: 1, fill: '#ecb248', stroke: '#4a0000' }}
-              href="/funcionarios"
+              href="/cadastrousuario"
             >
               <text fontSize={50} x="10%" y="50%">CADASTRAR</text>
               <text fontSize={45} x="23%" y="60%">USUÁRIO</text>
             </Hexagon>
           </div>
 
-          {/* <Link to={"/listaremprestimos"}><Button>Listar Empréstimos</Button></Link>
-          <Link to={"/listarreservas"}><Button>Listar Reservas</Button></Link>
-          <Link to={"/funcionarios"}><Button>Funcionários</Button></Link> */}
         </section>
         <section id="section2">
 
@@ -91,12 +86,6 @@ function HomeAdmin() {
               <text fontSize={50} x="17%" y="60%">USUÁRIOS </text>
             </Hexagon>
           </div>
-
-
-          {/* <Button>Obra Literária</Button>
-          <Link to={"/usuarios"}><Button>Usuários</Button></Link>
-          <Button>Categoria de Obra Literária</Button>
-          <Button>Categoria de Leitor</Button> */}
         </section>
 
       </S.ConteinerContent>
