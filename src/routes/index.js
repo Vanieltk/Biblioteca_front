@@ -12,6 +12,8 @@ import Funcionarios from "../views/Funcionarios";
 import ListarEmprestimos from "../views/ListarEmprestimos";
 import ListarReservas from "../views/ListarReservas";
 import Usuarios from "../views/Usuarios"
+import CadastroObra from "../views/CadastroObra";
+
 
 export default function(){
     return(
@@ -27,6 +29,8 @@ export default function(){
                 <Route path="/listaremprestimos" exact component={ListarEmprestimos}/> 
                 <Route path="/listarreservas" exact component={ListarReservas}/> 
                 <Route path="/usuarios" exact component={Usuarios}/>
+                <Route path="/cadastrousuario" exact component={CadastroUsuario}/>  
+                <Route path="/cadastroobra" exact component={CadastroObra}/>  
             </Switch>
         </BrowserRouter>
     )
