@@ -38,6 +38,9 @@ export const CenterContainer = styled.div`
          height: 45px;
    }
 
+   #drop {
+         margin-bottom: 20px;
+   }
    .buttonEmprestarContainer {
          height: 50px;
          width: 100%;

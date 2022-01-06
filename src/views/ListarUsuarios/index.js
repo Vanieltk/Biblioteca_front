@@ -63,7 +63,7 @@ function ListarUsuarios() {
         <br />
       </div>
       <S.ConteinerLogo>
-        <img src={colmeia} />
+        <img src={colmeia} alt="Imagem Colmeia" />
         LISTAR USUÁRIOS
       </S.ConteinerLogo>
       <S.ConteinerContent>

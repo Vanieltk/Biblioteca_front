@@ -12,7 +12,7 @@ function Header() {
             <S.Right>
                 <Link to="/home" >HOME</Link>
                 <span className="pipe">|</span>
-                <Link to="/acervo">ACERVO</Link>
+                <Link to="/home">ACERVO</Link>
                 <span className="pipe">|</span>
                 <Link href="#">MEUS LIVROS</Link>
                 <span className="pipe">|</span>
