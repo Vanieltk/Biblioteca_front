@@ -16,9 +16,9 @@ function HeaderAdmin() {
         <span className="pipe">|</span>
         <Link to="funcionarios">FUNCIONARIOS</Link>
         <span className="pipe">|</span>
-        <Link to="/acervo">ACERVO</Link>
+        <Link to="/home">ACERVO</Link>
         <span className="pipe">|</span>
-        <Link to="#">SAIR</Link>
+        <Link to="/">SAIR</Link>
       </S.Right>
     </S.Container>
   );

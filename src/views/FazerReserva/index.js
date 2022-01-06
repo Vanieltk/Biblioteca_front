@@ -3,37 +3,77 @@ import HeaderAdmin from "../../components/HeaderAdmin";
 import { InputText } from "primereact/inputtext";
 import { InputMask } from "primereact/inputmask";
 import { Dropdown } from "primereact/dropdown";
+import { Toast } from "primereact/toast";
+import { Button } from "primereact/button";
 
-import Button from "../../components/Button";
 import api from "../../services/api";
 
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import "primereact/resources/themes/saga-orange/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-function FazerReserva() {
+function FazerReserva(props) {
   const [CategoriasObra, setCategoriasObra] = useState({});
   const [CategoriaObra, setCategoriaObra] = useState({});
 
-  const [CategoriasLeitor, setCategoriasLeitor] = useState({});
-  const [CategoriaLeitor, setCategoriaLeitor] = useState({});
+  const [Categorias, setCategorias] = useState({});
+  const [Categoria, setCategoria] = useState({});
 
   const [formData, setFormData] = useState({});
 
-  function getDataAxios() {
-    api.get("/usuario/filter/all").then((response) => console.log(response));
+  const myToast = useRef(null);
+
+  useEffect(() => {
+    getUsuarioCategorias();
+    getCategoriaObras();
+  }, []);
+
+  function getUsuarioCategorias(props) {
+    api.get("/CategoriaUsuario/filter/all").then((response) => {
+      const categoriasUsuario = response.data.map((categoriaUsuario) => {
+        return {
+          label: categoriaUsuario.nome_categoria_usuario,
+          value: categoriaUsuario._id,
+        };
+      });
+      setCategorias(categoriasUsuario);
+    });
   }
 
-  function postData() {
+  function getCategoriaObras(props) {
+    api.get("/CategoriaObraLiteraria/filter/all").then((response) => {
+      const categoriasObra = response.data.map((categoriaObra) => {
+        return {
+          label: categoriaObra.nome_categoria_obra_literaria,
+          value: categoriaObra._id,
+        };
+      });
+      setCategoriasObra(categoriasObra);
+    });
+  }
+
+  function postReservaData() {
     //primeiro parametro a rota, segundo o objeto enviado no body da requisição
-    api.post("/usuario", formData).then((response) => console.log(response));
+    api.post("/Reserva", formData).then((response) => {
+      if (response.status === 200) {
+        myToast.current.show({
+          severity: "success",
+          summary: "Sucesso!",
+          detail: "Reserva feita com sucesso!",
+        });
+      }
+    });
+  }
+
+  function goBack() {
+    props.history.goBack();
   }
 
   return (
     <S.Container>
+      <Toast ref={myToast} />
       <HeaderAdmin />
       <S.CenterContainer>
         <h1>RESERVA</h1>
@@ -53,9 +93,16 @@ function FazerReserva() {
 
           <Dropdown
             id="drop"
-            value={CategoriaLeitor}
-            options={CategoriasLeitor}
+            value={Categoria}
+            options={Categorias}
             placeholder="Categoria do Leitor"
+            onChange={(e) => {
+              setCategoria(e.value);
+              setFormData({
+                ...formData,
+                idCategoriaUsuario: e.value,
+              });
+            }}
           />
 
           <span className="p-float-label">
@@ -63,7 +110,7 @@ function FazerReserva() {
               onChange={(e) => {
                 setFormData({
                   ...formData,
-                  ObraLiteraria: e.target.value,
+                  obra_literaria: e.target.value,
                 });
               }}
               className="in"
@@ -76,15 +123,23 @@ function FazerReserva() {
             value={CategoriaObra}
             options={CategoriasObra}
             placeholder="Categoria da Obra Literária"
-          />
+            onChange={(e) => {
+              setCategoriaObra(e.value);
+              setFormData({
+                ...formData,
+                idCategoriaObra: e.value,
+              });
+            }}
+            
+          /> 
 
           <span className="p-float-label">
             <InputMask
-              value={formData.Data_prevista_retirada}
+              value={formData.data_prevista_retirada}
               onChange={(e) => {
                 setFormData({
                   ...formData,
-                  Data_prevista_retirada: e.target.value,
+                  data_prevista_retirada: e.target.value,
                 });
               }}
               mask="99/99/9999"
@@ -94,11 +149,11 @@ function FazerReserva() {
           </span>
           <span className="p-float-label">
             <InputMask
-              value={formData.Data_prevista_devolucao}
+              value={formData.data_prevista_devolucao}
               onChange={(e) => {
                 setFormData({
                   ...formData,
-                  Data_prevista_devolucao: e.target.value,
+                  data_prevista_devolucao: e.target.value,
                 });
               }}
               mask="99/99/9999"
@@ -108,11 +163,11 @@ function FazerReserva() {
           </span>
           <span className="p-float-label">
             <InputMask
-              value={formData.Data_reserva}
+              value={formData.data_reserva}
               onChange={(e) => {
                 setFormData({
                   ...formData,
-                  Data_reserva: e.target.value,
+                  data_reserva: e.target.value,
                 });
               }}
               mask="99/99/9999"
@@ -134,12 +189,41 @@ function FazerReserva() {
           </span>
         </div>
         <div className="div-buttons">
-          <Link to="#">
-            <Button name="Fazer Reserva"></Button>
-          </Link>
-          <Link to="/home/admin">
-            <Button name="VOLTAR"></Button>
-          </Link>
+          
+          <Button
+            onClick={() => {
+              postReservaData();
+            }}
+            style={{ width: "250px" }}
+            icon="pi pi-check"
+            iconPos="right"
+            className="p-button-raised p-button-rounded"
+            label="CADASTRAR"
+            disabled={
+              !formData.leitor ||
+              !formData.idCategoriaUsuario ||
+              !formData.obra_literaria ||
+              !formData.idCategoriaObra ||
+              !formData.data_prevista_retirada ||
+              !formData.data_prevista_devolucao ||
+              !formData.data_reserva ||
+              !formData.funcionario
+              
+              
+            }
+          />
+        
+          <Button
+            onClick={() => {
+              goBack();
+            }}
+            style={{ width: "250px" }}
+            icon="pi pi-arrow-left"
+            iconPos="left"
+            className="p-button-raised p-button-rounded"
+            label="VOLTAR"
+          />
+
         </div>
       </S.CenterContainer>
     </S.Container>

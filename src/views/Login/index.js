@@ -6,6 +6,8 @@ import abelha from "../../assets/abelha-livro.png";
 import { Toast } from "primereact/toast";
 import { Button } from "primereact/button";
 import api from "../../services/api";
+import { Link } from "react-router-dom";
+
 
 function Login(props) {
   const myToast = useRef(null);
@@ -87,7 +89,7 @@ function Login(props) {
             {/* <button onClick={() => myToast.current.show({severity: 'success', summary: 'Success Message', detail: 'Order submitted'})}>Entrar</button> */}
             {/* </Link> */}
             <span className="span-cadastro">
-              Não tem cadastro? <a href="#">Cadastre-se</a>
+              Não tem cadastro? <Link to="/usuario/cadastrar">Cadastre-se</Link>
             </span>
           </form>
         </div>
