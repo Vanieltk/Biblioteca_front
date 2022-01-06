@@ -14,6 +14,7 @@ import FazerReserva from "../views/FazerReserva";
 import ListarReservas from "../views/ListarReservas";
 import ListarUsuarios from "../views/ListarUsuarios";
 import CadastroObra from "../views/CadastroObra";
+import ListarCategoriasObra from "../views/ListarCategoriasObras";
 
 export default function () {
   return (
@@ -31,6 +32,7 @@ export default function () {
         <Route path="/listarreservas" exact component={ListarReservas} />
         <Route path="/usuario/listar" exact component={ListarUsuarios} />
         <Route path="/obra/cadastrar" exact component={CadastroObra} />
+        <Route path="/listarcategoriaobra" exact component={ListarCategoriasObra}/>
       </Switch>
     </BrowserRouter>
   );
