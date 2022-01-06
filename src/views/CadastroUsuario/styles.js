@@ -47,10 +47,19 @@ export const CenterContainer = styled.div`
         height: 45px;
     }
 
-    .div-buttons {
+    .div-button-esquerda {
         display: flex;
-        margin-top: 40px;
-        margin-left: -250px;
+        justify-content:center
+        /* margin-top: 40px;
+        margin-left: -250px; */
+    }
+
+    .div-button-direita {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 12.5%;
+        /* margin-top: 40px;
+        margin-left: -250px; */
     }
 
     .button-direita {
