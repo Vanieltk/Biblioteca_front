@@ -12,7 +12,7 @@ function HomeAdmin() {
         <br />
       </div>
       <S.ConteinerLogo>
-        <img src={colmeia} />
+        <img src={colmeia} alt="Imagem de uma Colmeia"/>
         ADMINISTRADOR
       </S.ConteinerLogo>
       <S.ConteinerContent>
@@ -77,7 +77,7 @@ function HomeAdmin() {
           <div style={{ width: "80%" }}>
             <Hexagon
               style={{ flex: 1, fill: "#ecb248", stroke: "#4a0000" }}
-              href="/obraliteraria"
+              href="/listarcategoriaobra"
             >
               <text fontSize={50} x="13%" y="40%">
                 CATEGORIA
