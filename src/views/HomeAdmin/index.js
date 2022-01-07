@@ -80,8 +80,11 @@ function HomeAdmin() {
           <div style={{ width: "80%" }}>
             <Hexagon
               style={{ flex: 1, fill: "#ecb248", stroke: "#4a0000" }}
-              href="/listarcategoriaobra"
+              href="/categoria/obra/listar"
             >
+            <text fontSize={50} x="27%" y="35%">
+                LISTAR
+              </text>
               <text fontSize={50} x="13%" y="45%">
                 CATEGORIA
               </text>
@@ -110,13 +113,16 @@ function HomeAdmin() {
           <div style={{ width: "80%" }}>
             <Hexagon
               style={{ flex: 1, fill: "#ecb248", stroke: "#4a0000" }}
-              href="/categoriausuario"
+              href="/obra/listar"
             >
-              <text fontSize={50} x="13%" y="50%">
-                CATEGORIA
+              <text fontSize={50} x="27%" y="45%">
+                LISTAR
               </text>
-              <text fontSize={50} x="17%" y="60%">
-                USUÁRIOS{" "}
+              <text fontSize={50} x="30%" y="55%">
+                OBRA
+              </text>
+              <text fontSize={50} x="17%" y="65%">
+                LITERÁRIA
               </text>
             </Hexagon>
           </div>

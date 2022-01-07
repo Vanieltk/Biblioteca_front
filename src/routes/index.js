@@ -32,7 +32,7 @@ export default function () {
         <Route path="/listarreservas" exact component={ListarReservas} />
         <Route path="/usuario/listar" exact component={ListarUsuarios} />
         <Route path="/obra/cadastrar" exact component={CadastroObra} />
-        <Route path="/listarcategoriaobra" exact component={ListarCategoriasObra}/>
+        <Route path="/categoria/obra/listar" exact component={ListarCategoriasObra}/>
       </Switch>
     </BrowserRouter>
   );
