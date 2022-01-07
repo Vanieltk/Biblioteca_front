@@ -45,8 +45,6 @@ export const ConteinerContent = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
     justify-content: space-evenly;
-    // padding-top: 90px;
-    // padding-bottom: 90px;
     margin-left: 12.5%;
     margin-bottom: 0%;
 
@@ -67,7 +65,6 @@ export const ConteinerContent = styled.div`
     justify-items: center;
     grid-template-columns: repeat(4, 25%);
     justify-content: space-evenly;
-    // padding-top: 90px;
     margin-left: 5%;
 
     Button {

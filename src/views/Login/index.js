@@ -1,8 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import * as S from "./styles";
 import abelha from "../../assets/abelha-livro.png";
-//componentes
-// import Button from '../../components/Button';
 import { Toast } from "primereact/toast";
 import { Button } from "primereact/button";
 import api from "../../services/api";
@@ -85,9 +83,6 @@ function Login(props) {
                 }}
               />
             </div>
-            {/* <Link to="/home"> */}
-            {/* <button onClick={() => myToast.current.show({severity: 'success', summary: 'Success Message', detail: 'Order submitted'})}>Entrar</button> */}
-            {/* </Link> */}
             <span className="span-cadastro">
               Não tem cadastro? <Link to="/usuario/cadastrar">Cadastre-se</Link>
             </span>

@@ -22,8 +22,8 @@ export const ConteinerLogo = styled.div`
   font-size: 70px;
   margin-bottom: -45px;
   color: #4a0000;
-
   text-align: center;
+  
   img {
     padding-top: 50px;
     margin-top: -80px;
@@ -35,9 +35,7 @@ export const ConteinerLogo = styled.div`
 export const ConteinerContent = styled.div`
   width: 90vw;
   height: 100vh;
-
   background-color: #f5d58a;
-
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 30px;
