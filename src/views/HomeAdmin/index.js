@@ -65,10 +65,13 @@ function HomeAdmin() {
               style={{ flex: 1, fill: "#ecb248", stroke: "#4a0000" }}
               href="/obra/cadastrar"
             >
-              <text fontSize={50} x="33%" y="50%">
+              <text fontSize={50} x="12%" y="45%">
+                CADASTRAR
+              </text>
+              <text fontSize={50} x="30%" y="55%">
                 OBRA
               </text>
-              <text fontSize={45} x="19%" y="60%">
+              <text fontSize={45} x="19%" y="65%">
                 LITERÁRIA{" "}
               </text>
             </Hexagon>
@@ -79,13 +82,13 @@ function HomeAdmin() {
               style={{ flex: 1, fill: "#ecb248", stroke: "#4a0000" }}
               href="/listarcategoriaobra"
             >
-              <text fontSize={50} x="13%" y="40%">
+              <text fontSize={50} x="13%" y="45%">
                 CATEGORIA
               </text>
-              <text fontSize={50} x="33%" y="50%">
+              <text fontSize={50} x="33%" y="55%">
                 OBRA
               </text>
-              <text fontSize={50} x="17%" y="60%">
+              <text fontSize={50} x="17%" y="65%">
                 LITERÁRIA{" "}
               </text>
             </Hexagon>

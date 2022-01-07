@@ -31,7 +31,7 @@ function FazerEmprestimos(props) {
   }, []);
 
 
-  function getCategoriaUsuarios(props) {
+  function getCategoriaUsuarios() {
     api.get("/CategoriaUsuario/filter/all").then((response) => {
       const categoriasUsuario = response.data.map((categoriaUsuario) => {
         return {
