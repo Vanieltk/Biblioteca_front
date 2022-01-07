@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState} from "react";
 import * as S from "./styles";
 import abelha from "../../assets/abelha-livro.png";
 import { Toast } from "primereact/toast";

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {} from '../../utils/index.js';
 import imagemFundo from '../../assets/background.png';
 
 export const Container = styled.div`
