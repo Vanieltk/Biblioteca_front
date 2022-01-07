@@ -38,15 +38,24 @@ function CadastroUsuario(props) {
 
   function postUsuarioData() {
     //primeiro parametro a rota, segundo o objeto enviado no body da requisição
-    api.post("/usuario", formData).then((response) => {
-      if (response.status === 200) {
+    api
+      .post("/usuario", formData)
+      .then((response) => {
+        if (response.status === 200) {
+          myToast.current.show({
+            severity: "success",
+            summary: "Sucesso!",
+            detail: "Usuário cadastrado com sucesso!",
+          });
+        }
+      })
+      .catch((err) => {
         myToast.current.show({
-          severity: "success",
-          summary: "Sucesso!",
-          detail: "Usuário cadastrado com sucesso!",
+          severity: "error",
+          summary: "Error",
+          detail: "Usuário já cadastrado",
         });
-      }
-    });
+      });
   }
 
   function goBack() {

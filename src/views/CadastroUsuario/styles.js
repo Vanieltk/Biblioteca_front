@@ -33,6 +33,10 @@ export const CenterContainer = styled.div`
         
         margin-top: 0;
     }
+    
+    .p-inputtext{
+        width:300px
+    }
 
     .p-float-label {
         width: 400px;
