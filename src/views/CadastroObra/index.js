@@ -47,7 +47,13 @@ function CadastroObra(props) {
         myToast.current.show({
           severity: "success",
           summary: "Sucesso!",
-          detail: "Obra Literária cadastrada com sucesso!",
+          detail: `Obra Literária ${response.data.titulo} cadastrada com sucesso!`,
+        });
+      } else {
+        myToast.current.show({
+          severity: "error",
+          summary: "Error!",
+          detail: `Não foi possível cadastrar a Obra Literária de título: ${response.data.titulo}!`,
         });
       }
     });
