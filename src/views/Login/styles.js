@@ -51,19 +51,8 @@ export const ContainerRight = styled.div`
         }
 
         .form-login Button {
-            /* position: relative;
-            margin-left: 35%;
-            bottom: 0;
-            background-color: #F68220;
-            border: 0;
-            border-radius: 5em;
-            width: 35%;
-            height: 130%; */
             font-size: 1.3em;
-            /* color: black; */
-            /* width:50%; */
             cursor: pointer;
-            
             &:active {
                 background-color: brown;
             }
@@ -101,9 +90,7 @@ export const ContainerRight = styled.div`
 
     .div-button-esquerda {
         display: flex;
-        justify-content:center
-        /* margin-top: 40px;
-        margin-left: -250px; */
+        justify-content:center;
     }
     
 `

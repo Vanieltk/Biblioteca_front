@@ -3,13 +3,12 @@ import * as S from "./styles";
 import HeaderAdmin from "../../components/HeaderAdmin";
 import { FileUpload } from "primereact/fileupload";
 import { Dropdown } from "primereact/dropdown";
-import { Button } from 'primereact/button'
+import { Button } from "primereact/button";
 import { Toast } from "primereact/toast";
 import { InputMask } from "primereact/inputmask";
 
 import { InputText } from "primereact/inputtext";
 import { useState, useEffect, useRef } from "react";
-// import Button from "../../components/Button";
 import api from "../../services/api";
 
 
